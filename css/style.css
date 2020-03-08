@@ -1,0 +1,152 @@
+/* Custom Stylesheet */
+/**
+* Use this file to override Materialize files so you can update
+* the core Materialize files in the future
+*
+* Made By MaterializeCSS.com
+*/
+
+body { background: #F2F2F2; }
+
+.bkg-orange { background: #F8981D; }
+.bkg-blue { background: #02559B; }
+.textcolor-white { color: white; }
+.nopadding-top { padding-top: 0; }
+.nopadding-bottom { padding-bottom: 0; }
+.nomargin-top { margin-top: 0; }
+.nomargin-bottom { margin-bottom: 0; }
+.float-left {float: left;}
+
+
+.section-title { font-size: 42px; font-weight: 900; }
+.title-blue{ color: #02559B; }
+.title-orange{ color: #F99E2C; }
+.title-upper{ text-transform: uppercase; }
+.stats-values-container { 
+	background: #02559B;
+	padding: 10px 0;
+}
+.stat-text {
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1.2
+}
+.stat-text span { display: block; }
+.cta-link { 
+	color: white;
+	background: #02559B;
+	padding: 5px 17px;
+	border-radius:30px;
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 1;
+	text-transform: uppercase;
+}
+.datos-section{
+	background-image: url(../images/colina_molinos_Home.svg);
+	background-repeat: no-repeat;
+	padding-top: 60px;
+	background-color: #fff;
+	background-position: top;
+	min-height: 250px;
+	margin-top: 60px;
+}
+.datos-car-bike {
+	background-image: url(../images/colina_autos_Home.svg);
+	min-height: 150px;
+	background-size: cover;
+	background-color: #fff;
+}
+.datos-section-icons {
+	background-repeat: no-repeat;
+	background-color: #F8981D;
+	background-position: top;
+}
+.datos-section-icons .container {
+	padding: 40px 0;
+}
+.post-item-meta-list {}
+.post-item-meta-list li { 
+	margin-bottom: 10px;
+    position: relative !important;
+    opacity: 1 !important;
+}
+.post-item-tag-list { display: inline-block; }
+.post-item-tag-list li { display: inline; }
+.post-item-tag {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	font-size: 18px;
+	padding: 2px 10px;
+	display: inline-block;
+	margin-right: 2px;
+	line-height: 1
+}
+
+.post-item-tag.tag-xls {background: #9BB78B; }
+.post-item-tag.tag-csv {background: #F4A12E; }
+.post-item-tag.tag-pdf {background: #515FA2; }
+.post-item-tag.tag-ods {background: #3D7845; }
+
+.post-item-share-icons { display: inline; }
+.post-item-share-icons li { 
+	display: inline;
+	margin-right: 5px;
+	line-height: 0;
+	-webkit-transform: translateY(10px);
+	transform: translateY(10px)
+}
+.post-item-share-icons li img { width: 36px !important; }
+
+/* SLIDER */
+.slider .slides { background: none; }
+.slider .indicators .indicator-item {
+	background-color: #666666;
+	border: 3px solid #ffffff;
+	-webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.slider .indicators .indicator-item.active {
+	background-color: #ffffff;
+}
+.slider {
+	width: 100%;
+	margin: 0 auto;
+	
+}
+.slider .indicators {
+	bottom: 60px;
+	z-index: 100;
+	/* text-align: left; */
+}
+.slider,
+.slides{ height: 900px !important; }
+
+.repositoriodedatos-section { 
+	padding: 10px 0;
+	font-size: 20px;
+}
+.iniciativa-section {
+	background-color: white;
+	background-image: url(../images/Ciudad_Footer.svg);
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+.iniciativa-flex { 
+	display: -webkit-box; 
+	display: -ms-flexbox; 
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin-bottom: 200px;
+}
+.contribucion-section { padding-bottom: 100px;}
+.page-content p{
+	text-align: justify;
+}
+.page-content img{
+	margin: 18px;
+}
