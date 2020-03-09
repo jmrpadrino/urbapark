@@ -12,23 +12,37 @@
 		<!-- https://css2sass.herokuapp.com/ -->
 	</head>
 	<body>
-		<nav class="light-blue lighten-1" role="navigation">
-			<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-				<ul class="right hide-on-med-and-down">
-					<li><a href="#">Navbar Link</a></li>
+		<nav class="navigation" role="navigation">
+			<div class="nav-wrapper container">
+				
+				<ul class="navigation-desktop-list right hide-on-med-and-down">
+					<li><a href="#">Inicio</a></li>
+					<li><a class="active" href="#">Iniciativa</a></li>
+					<li><a href="#">Recursos</a></li>
+					<li><a href="#">Datos</a></li>
+					<li><a href="#">Historias</a></li>
+					<li><a href="#">Eventos y Actividades</a></li>
+					<li class="no-separator"><a href="#"><img src="images/Youtube.svg"></a></li>
+					<li class="no-separator"><a href="#"><img src="images/Facebook.svg"></a></li>
+					<li class="no-separator"><a href="#"><img src="images/instagram.svg"></a></li>
+					<li class="no-separator"><a href="#"><img src="images/Twitter.svg"></a></li>
+					
 				</ul>
 
 				<ul id="nav-mobile" class="sidenav">
 					<li><a href="#">Navbar Link mov</a></li>
 				</ul>
 				<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				<a id="logo-container" href="#" class="brand-logo">Logo</a>
 			</div>
 		</nav>
-		<div class="section no-pad-bot" id="index-banner">
-			<div class="container">
-				<h1>Hero Banner</h1>
+		<section class="hero">
+			<div class="section no-pad-bot hero-banner" id="index-banner">
+				<div class="container center">
+					<h1>Sobre la iniciativa</h1>
+				</div>
 			</div>
-		</div>
+		</section>
 
 		<section class="page-container" id="page_container">
 			<div class="container">
