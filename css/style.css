@@ -44,6 +44,7 @@ nav .brand-logo{
 nav ul li:not(.no-separator) a:hover,
 nav ul li:not(.no-separator) a.active{
 	background: #F99E2C;
+	color: white;
 }
 .navigation li:not(.no-separator) a{ 
 	padding: 0 30px;
@@ -74,11 +75,65 @@ nav ul li:not(.no-separator) a.active{
 	background-position: bottom;
 }
 
-.hero h1{
+.hero h1 {
 	color: white;
 	text-transform: uppercase;
 	font-weight: 900;
 }
+
+.search-bar {
+	box-shadow: 0 2px 5px gray;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 10px 0;
+}
+.search-bar,
+.search-bar a{
+	color: #02559B;
+}
+
+.form-inline {
+	display: flex;
+	justify-content: space-between;
+}
+
+#search_input::placeholder {
+	color: #02559B;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.search-form-inline #search_input {
+	border: 1px;
+	border-radius: 6px;
+	box-shadow: 0px 2px 5px lightgray;
+	color: #02559B;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+	margin-right: 10px;
+	padding: 0 20px;
+}
+
+.search-form-inline #search_input,
+.search-form-inline #search_button {
+	height: 2rem;
+}
+
+.search-form-inline #search_button {
+	border-radius: 20px;
+	background: #F99E2C;
+	color: white;
+	text-transform: uppercase;
+	border: none;
+	padding: 0 24px;
+	font-weight: bold;
+}
+
+.search-form-inline #search_button:hover {
+	background: #de8311;
+} 
 
 .section-title { font-size: 42px; font-weight: 900; }
 .title-blue{ color: #02559B; }
