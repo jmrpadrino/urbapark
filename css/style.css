@@ -11,6 +11,8 @@ body { background: #F2F2F2; }
 .bkg-orange { background: #F8981D; }
 .bkg-blue { background: #02559B; }
 .textcolor-white { color: white; }
+.nopadding { padding: 0!important; }
+.nopadding-left { padding-left: 0; }
 .nopadding-top { padding-top: 0; }
 .nopadding-bottom { padding-bottom: 0; }
 .nomargin-top { margin-top: 0; }
@@ -33,33 +35,41 @@ body { background: #F2F2F2; }
 	background: white;
 	border-radius: 30px 0 0 30px;
 }
+
 nav .brand-logo{
 	position: relative;
 	float: right;
 }
+
 .navigation a{ 
 	color: #02559B;
 	font-weight: bold;
 }
+
 nav ul li:not(.no-separator) a:hover,
 nav ul li:not(.no-separator) a.active{
 	background: #F99E2C;
 	color: white;
 }
+
 .navigation li:not(.no-separator) a{ 
 	padding: 0 30px;
 }
 
+
 .navigation-desktop-list { margin-left: 36px; }
+
 
 .navigation-desktop-list li:not(.no-separator):before{
 	content: '|';
 	color: #02559B;
 	display: inline-block;
 }
+
 .navigation-desktop-list a {
 	display: inline-block;
 }
+
 .no-separator a { padding: 0 6px; }
 .navigation-desktop-list .no-separator img {
 	width: 24px;
@@ -133,7 +143,7 @@ nav ul li:not(.no-separator) a.active{
 
 .search-form-inline #search_button:hover {
 	background: #de8311;
-} 
+}
 
 .section-title { font-size: 42px; font-weight: 900; }
 .title-blue{ color: #02559B; }
@@ -147,7 +157,7 @@ nav ul li:not(.no-separator) a.active{
 	color: white;
 	font-weight: bold;
 	font-size: 18px;
-	line-height: 1.2
+	line-height: 1.2;
 }
 .stat-text span { display: block; }
 .cta-link { 
@@ -167,7 +177,9 @@ nav ul li:not(.no-separator) a.active{
 		margin: 0 auto;
 		margin-bottom: 18px;
 		display: block;
+    }
 }
+
 .datos-section{
 	background-image: url(../images/colina_molinos_Home.svg);
 	background-repeat: no-repeat;
@@ -282,3 +294,24 @@ nav ul li:not(.no-separator) a.active{
 .page-content img{
 	margin: 18px;
 }
+.hero-backgrounded-text,
+.categoty-sidebar { background: #F8981D; }
+.category-list li a{
+    display: block;
+    padding: 5px 0;
+    text-align: center;
+    color: white;
+}
+.category-list li a:hover{
+    background: blue;
+}
+.category-list li a:before:hover{
+    content:"";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 200px 0 0 100px;
+    border-color: transparent transparent transparent #007bff;
+}
+
