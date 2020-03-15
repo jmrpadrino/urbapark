@@ -332,7 +332,7 @@ nav ul li:not(.no-separator) a.active{
 .category-list li a:hover{
     background: #02559B;
 }
-.category-list li:hover a:after{
+.category-list:not(.square-item-list) li:hover a:after{
     content:"";
     display: inline-block;
     width: 0;
@@ -384,4 +384,83 @@ nav ul li:not(.no-separator) a.active{
     }
     .hero h1 { font-size: 2.2rem; }
     .section-title { font-size: 28px; }
+}
+
+/* Children list */
+.square-item-list li {
+    position: relative;
+}
+.square-children-list {
+    position: absolute;
+    left: 200px;
+    top: 0;
+    background: #F8981D;
+    display: none;
+}
+.square-item-list li:hover .square-children-list {
+    display: flex;
+}
+.square-child-item {
+    width: 120px;
+    height: 125px;
+    padding: 10px;
+    margin: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+.create-history-btn {
+    padding: 14px 0 !important;
+    background: #02559B;
+    color: white;
+    font-weight: bold;
+    max-width: 120px;
+    margin: 0 auto;
+    margin-top: 36px;
+}
+.visual-data-filter-list {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px 0;
+    margin-top: 48px;
+}
+.visual-data-filter-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.visual-data-filter-list li label {
+    float: left;
+    display: block;
+    width: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+.visual-data-filter-list select {
+    display: block;
+    float: left;
+}
+.action-btn-list ul{
+    background: #02559B;
+    margin: 0 auto;
+    display: table;
+    margin-top: 18px;
+}
+.action-btn-list ul li {
+    display: inline-flex;
+    justify-content: space-between;
+}
+.action-btn-list ul li a {
+    display: block;
+    padding: 14px 17px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.action-btn-list ul li a:hover {
+    background: #023c6d;
 }
