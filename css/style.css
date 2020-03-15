@@ -334,7 +334,7 @@ nav ul li:not(.no-separator) a.active{
     border-color: transparent transparent transparent #02559B;
     position: absolute;
     right: -9px;
-    top: -1px;
+    top: -0;
 }
 
 /* ITEM LIST */
