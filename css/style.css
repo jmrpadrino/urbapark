@@ -18,6 +18,8 @@ body { background: #F2F2F2; }
 .nomargin-top { margin-top: 0; }
 .nomargin-bottom { margin-bottom: 0; }
 .float-left {float: left;}
+.hero-text { font-size: 24px; }
+.t-upper { text-transform: uppercase; }
 
 .navigation{ 
 	background: none;
@@ -203,6 +205,12 @@ nav ul li:not(.no-separator) a.active{
 .datos-section-icons .container {
 	padding: 40px 0;
 }
+.post-item-title {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #02559B;
+    font-weight: 900;
+}
 .post-item-meta-list {}
 .post-item-meta-list li { 
 	margin-bottom: 10px;
@@ -362,4 +370,8 @@ nav ul li:not(.no-separator) a.active{
 .item-list-content ol {
     list-style: decimal;
     margin-left: 60px;
+}
+.mansory-layout .post-item {
+    max-width: 45%;
+    margin-right: 36px;
 }
