@@ -371,7 +371,17 @@ nav ul li:not(.no-separator) a.active{
     list-style: decimal;
     margin-left: 60px;
 }
-.mansory-layout .post-item {
-    max-width: 45%;
-    margin-right: 36px;
+@media only screen and (min-width: 1023px ){
+    .mansory-layout .post-item {
+        max-width: 45%;
+        margin-right: 36px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .hero { 
+        height: auto;
+        padding-bottom: 60px;
+    }
+    .hero h1 { font-size: 2.2rem; }
+    .section-title { font-size: 28px; }
 }
