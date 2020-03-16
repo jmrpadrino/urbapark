@@ -61,7 +61,7 @@ nav ul li:not(.no-separator) a.active{
 
 .navigation-desktop-list { margin-left: 36px; }
 
-
+.navigation-desktop-list li { position: relative; }
 .navigation-desktop-list li:not(.no-separator):before{
 	content: '|';
 	color: #02559B;
@@ -77,6 +77,54 @@ nav ul li:not(.no-separator) a.active{
 	width: 24px;
     height: 24px;
     margin-top: 20px;
+}
+.is-dropdown { position: relative; }
+.is-dropdown ul {
+	position: absolute;
+	top: 66px;
+	left: 0;
+	background: #F99E2C;
+	display: none;
+}
+.is-dropdown:hover ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	overflow: auto;
+}
+
+.is-dropdown ul li:before{
+	display: none !important;
+}
+.is-dropdown ul li a{
+	padding: 0;
+	color: white;
+	font-weight: 400;
+}
+.is-dropdown ul li a:hover{ 
+	color: #02559B !important;
+}
+.is-dropdown ul li,
+.is-dropdown ul li a{
+	line-height: 2.5;
+	position: relative;
+}
+.is-dropdown ul li a:before{
+	content:"";
+	display: block;
+	position: absolute;
+	width: 80%;
+	border-bottom: 1px solid white;
+	height: 1px;
+	bottom: 0;
+	left: 15px;
+}
+.is-dropdown ul li:last-child a:before{
+	display: none;
 }
 
 .hero {
@@ -94,6 +142,7 @@ nav ul li:not(.no-separator) a.active{
 }
 
 .search-bar {
+	-webkit-box-shadow: 0 2px 5px gray;
 	box-shadow: 0 2px 5px gray;
 	font-weight: bold;
 	font-size: 16px;
@@ -105,8 +154,26 @@ nav ul li:not(.no-separator) a.active{
 }
 
 .form-inline {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
+}
+
+#search_input::-webkit-input-placeholder {
+	color: #02559B;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#search_input:-ms-input-placeholder {
+	color: #02559B;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
 }
 
 #search_input::placeholder {
@@ -119,6 +186,7 @@ nav ul li:not(.no-separator) a.active{
 .search-form-inline #search_input {
 	border: 1px;
 	border-radius: 6px;
+	-webkit-box-shadow: 0px 2px 5px lightgray;
 	box-shadow: 0px 2px 5px lightgray;
 	color: #02559B;
 	font-size: 16px;
@@ -290,7 +358,12 @@ nav ul li:not(.no-separator) a.active{
 }
 @media only screen and (max-width:768px){
 	.iniciativa-flex {
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 	}
 	.iniciativa-flex img { margin-bottom: 18px;}
@@ -357,7 +430,10 @@ nav ul li:not(.no-separator) a.active{
     font-size: 22px;
 }
 .share-icon-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 .share-icon-list {
@@ -398,6 +474,8 @@ nav ul li:not(.no-separator) a.active{
     display: none;
 }
 .square-item-list li:hover .square-children-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .square-child-item {
@@ -405,8 +483,14 @@ nav ul li:not(.no-separator) a.active{
     height: 125px;
     padding: 10px;
     margin: 5px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     border: 1px solid white;
 }
@@ -420,7 +504,11 @@ nav ul li:not(.no-separator) a.active{
     margin-top: 36px;
 }
 .visual-data-filter-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -428,8 +516,14 @@ nav ul li:not(.no-separator) a.active{
     margin-top: 48px;
 }
 .visual-data-filter-list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .visual-data-filter-list li label {
@@ -451,7 +545,11 @@ nav ul li:not(.no-separator) a.active{
     margin-top: 18px;
 }
 .action-btn-list ul li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 .action-btn-list ul li a {
