@@ -13,24 +13,47 @@
 	</head>
 	<body>
 		<nav class="navigation" role="navigation">
-			<div class="nav-wrapper container">
-				
+			<div class="nav-wrapper">
+
 				<ul class="navigation-desktop-list right hide-on-med-and-down">
-					<li><a href="#">Inicio</a></li>
-					<li><a class="active" href="#">Iniciativa</a></li>
-					<li><a href="#">Recursos</a></li>
+					<li><a class="active" href="#">Inicio</a></li>
+					<li><a href="#">Iniciativa</a></li>
+					<li class="is-dropdown">
+						<a href="#">Recursos</a>
+						<ul>
+							<li><a href="#">Metodología</a></li>
+							<li><a href="#">Herramientas</a></li>
+						</ul>
+					</li>
 					<li><a href="#">Datos</a></li>
 					<li><a href="#">Historias</a></li>
-					<li><a href="#">Eventos y Actividades</a></li>
+					<li class="is-dropdown">
+						<a href="#">Eventos y Noticias</a>
+						<ul>
+							<li><a href="#">Eventos</a></li>
+							<li><a href="#">Noticias</a></li>
+						</ul>
+					</li>
+					<li class="no-separator">
+						<form class="form-inline search-form-inline">
+							<input id="search_input" type="text" name="s" placeholder="Buscar">
+							<button id="search_button" type="submit">Q</button>
+						</form>
+					</li>
 					<li class="no-separator"><a href="#"><img src="images/Youtube.svg"></a></li>
 					<li class="no-separator"><a href="#"><img src="images/Facebook.svg"></a></li>
 					<li class="no-separator"><a href="#"><img src="images/instagram.svg"></a></li>
 					<li class="no-separator"><a href="#"><img src="images/Twitter.svg"></a></li>
-					
+
 				</ul>
 
 				<ul id="nav-mobile" class="sidenav">
-					<li><a href="#">Navbar Link mov</a></li>
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Iniciativa</a></li>
+					<li><a href="#">Recursos</a></li>
+					<li><a href="#">Datos</a></li>
+					<li><a href="#">Historias</a></li>
+					<li><a href="#">Eventos y Actividades</a></li>
 				</ul>
 				<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 				<a id="logo-container" href="#" class="brand-logo">Logo</a>
@@ -47,91 +70,104 @@
 
 		<section class="page-container" id="page_container">
 			<div class="row">
-			    <div class="col s12 m2 nopadding categoty-sidebar">
-			        <div class="hide-sidebar-btn center closer-placeholder">
-			            <img src="http://placehold.it/36x36" >
-			        </div>
-			        <div class="sidebar-title center">
-			            <h5 class="category-list-title">Categorias</h5>
-			        </div>
-			        <div class="category-list-container">
-			            <ul class="category-list">
-			                <li><a href="#">Categoría 1</a></li>
-			                <li><a href="#">Categoría 2</a></li>
-			                <li><a href="#">Categoría 3</a></li>
-			                <li><a href="#">Categoría 4</a></li>
-			                <li><a href="#">Categoría 5</a></li>
-			                <li><a href="#">Categoría 6</a></li>
-			                <li><a href="#">Categoría 7</a></li>
-			                <li><a href="#">Categoría 8</a></li>
-			                <li><a href="#">Categoría 9</a></li>
-			                <li><a href="#">Categoría 10</a></li>
-			            </ul>
-			        </div>
-			    </div>
-			    <div class="col s12 m10">
-			        <div class="row">
-                        <div class="col s12">
-                            <!-- inicio bucle -->
-                            <div class="item-list">
-                                <div class="col s12 l8 item-list-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt velit, impedit libero corrupti illum odit tempora sequi ducimus hic ea dicta in quisquam illo quasi amet quidem veniam magni quae.</p>
-                                    <ol>
-                                        <li>Archivo: Nombre del archivo</li>
-                                        <li>Archivo: Nombre del archivo</li>
-                                        <li>Archivo: Nombre del archivo</li>
-                                    </ol>
-                                </div>
-                                <div class="col s12 l2 center">
-                                    <h5 class="share-title">Comparte</h5>
-                                    <ul class="share-icon-list">
-                                        <li><a href="#"><img src="http://placehold.it/32x32?text=F" alt=""></a></li>
-                                        <li><a href="#"><img src="http://placehold.it/32x32?text=I" alt=""></a></li>
-                                        <li><a href="#"><img src="http://placehold.it/32x32?text=T" alt=""></a></li>
-                                        <li><a href="#"><img src="http://placehold.it/32x32?text=M" alt=""></a></li>
-                                    </ul>
-                                    <h5 class="share-title">Comentarios</h5>
-                                    <ul class="share-icon-list">
-                                        <li><a href="#"><img src="http://placehold.it/32x32?text=L" alt=""></a></li>
-                                        <li><a href="#"><img src="http://placehold.it/32x32?text=C" alt=""></a></li>
-                                    </ul>
-                                </div>
-                                <div class="col s12 l2 center">
-                                    <h5 class="share-title">Descarga</h5>
-                                    <a href="#"><img src="http://placehold.it/32x32?text=M" alt=""></a>
-                                </div>
-                            </div>
-                            <!-- final bucle -->
-                            
-                            <div class="item-list">
-                                <div class="col s12 l8 item-list-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt velit, impedit libero corrupti illum odit tempora sequi ducimus hic ea dicta in quisquam illo quasi amet quidem veniam magni quae.</p>
-                                </div>
-                                <div class="col s12 l2 center">
-                                    <h5 class="share-title">Comparte</h5>
-                                    <ul class="share-icon-list">
-                                        <li><a href="#"><img src="http://placehold.it/32x32?text=F" alt=""></a></li>
-                                        <li><a href="#"><img src="http://placehold.it/32x32?text=I" alt=""></a></li>
-                                        <li><a href="#"><img src="http://placehold.it/32x32?text=T" alt=""></a></li>
-                                        <li><a href="#"><img src="http://placehold.it/32x32?text=M" alt=""></a></li>
-                                    </ul>
-                                    <h5 class="share-title">Comentarios</h5>
-                                    <ul class="share-icon-list">
-                                        <li><a href="#"><img src="http://placehold.it/32x32?text=L" alt=""></a></li>
-                                        <li><a href="#"><img src="http://placehold.it/32x32?text=C" alt=""></a></li>
-                                    </ul>
-                                </div>
-                                <div class="col s12 l2 center">
-                                    <h5 class="share-title">Descarga</h5>
-                                    <a href="#"><img src="http://placehold.it/32x32?text=M" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-			        </div>
-			    </div>
+				<div class="col s12 m2 nopadding categoty-sidebar">
+					<div class="hide-sidebar-btn center closer-placeholder">
+						<img src="http://placehold.it/36x36" >
+					</div>
+					<div class="sidebar-title center">
+						<h5 class="category-list-title">Categorias</h5>
+					</div>
+					<div class="category-list-container">
+						<ul class="category-list">
+							<li><a href="#">Categoría 1</a></li>
+							<li><a href="#">Categoría 2</a></li>
+							<li><a href="#">Categoría 3</a></li>
+							<li><a href="#">Categoría 4</a></li>
+							<li><a href="#">Categoría 5</a></li>
+							<li><a href="#">Categoría 6</a></li>
+							<li><a href="#">Categoría 7</a></li>
+							<li><a href="#">Categoría 8</a></li>
+							<li><a href="#">Categoría 9</a></li>
+							<li><a href="#">Categoría 10</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col s12 m10">
+					<div class="row add-top-margin-40">
+						<div class="col s12">
+							<!-- inicio bucle -->
+							<div class="item-list">
+								<div class="col s12 l10 item-list-content">
+									<h3>Titulo Lorem</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt velit, impedit libero corrupti illum odit tempora sequi ducimus hic ea dicta in quisquam illo quasi amet quidem veniam magni quae.</p>
+									<p><strong>Autor:</strong> Nombre Nombre Apellido Apellido</p>
+								</div>
+								<div class="col s12 l2 center">
+									<h5 class="share-title">Comparte</h5>
+									<ul class="share-icon-list">
+										<li><a href="#"><img src="http://placehold.it/32x32?text=F" alt=""></a></li>
+										<li><a href="#"><img src="http://placehold.it/32x32?text=I" alt=""></a></li>
+										<li><a href="#"><img src="http://placehold.it/32x32?text=T" alt=""></a></li>
+										<li><a href="#"><img src="http://placehold.it/32x32?text=M" alt=""></a></li>
+									</ul>
+									<h5 class="share-title">Descarga</h5>
+									<a href="#modal1" class="modal-trigger"><img src="http://placehold.it/32x32?text=M" alt=""></a>
+								</div>
+								<!-- Modal Structure -->
+								<div id="modal1" class="modal">
+									<div class="modal-content">
+										<h4>Descargar 1</h4>
+										<ol>
+											<li>Archivo: Nombre del archivo</li>
+											<li>Archivo: Nombre del archivo</li>
+											<li>Archivo: Nombre del archivo</li>
+										</ol>
+									</div>
+									<div class="modal-footer">
+										<a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+									</div>
+								</div>
+							</div>
+							<!-- final bucle -->
+
+							<div class="item-list">
+								<div class="col s12 l10 item-list-content">
+									<h3>Titulo Lorem</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt velit, impedit libero corrupti illum odit tempora sequi ducimus hic ea dicta in quisquam illo quasi amet quidem veniam magni quae.</p>
+									<p><strong>Autor:</strong> Nombre Nombre Apellido Apellido</p>
+								</div>
+								<div class="col s12 l2 center">
+									<h5 class="share-title">Comparte</h5>
+									<ul class="share-icon-list">
+										<li><a href="#"><img src="http://placehold.it/32x32?text=F" alt=""></a></li>
+										<li><a href="#"><img src="http://placehold.it/32x32?text=I" alt=""></a></li>
+										<li><a href="#"><img src="http://placehold.it/32x32?text=T" alt=""></a></li>
+										<li><a href="#"><img src="http://placehold.it/32x32?text=M" alt=""></a></li>
+									</ul>
+									<h5 class="share-title">Descarga</h5>
+									<a href="#modal2" class="modal-trigger"><img src="http://placehold.it/32x32?text=M" alt=""></a>
+								</div>
+								<!-- Modal Structure -->
+								<div id="modal2" class="modal">
+									<div class="modal-content">
+										<h4>Descargar 2</h4>
+										<ol>
+											<li>Archivo: Nombre del archivo</li>
+											<li>Archivo: Nombre del archivo</li>
+											<li>Archivo: Nombre del archivo</li>
+										</ol>
+									</div>
+									<div class="modal-footer">
+										<a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
-		
+
 		<section class="repositoriodedatos-section bkg-orange textcolor-white">
 			<div class="container">
 				<div class="row nomargin-bottom">
@@ -142,7 +178,7 @@
 				</div>
 			</div>
 		</section>
-		
+
 		<section class="iniciativa-section" id="iniciativa_section">
 			<div class="container">
 				<div class="row">
@@ -162,7 +198,7 @@
 				</div>
 			</div>
 		</section>
-		
+
 		<section class="contribucion-section" id="contribucion_section">
 			<div class="container">
 				<div class="row">

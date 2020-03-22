@@ -13,8 +13,8 @@
 	</head>
 	<body>
 		<nav class="navigation" role="navigation">
-			<div class="nav-wrapper container">
-				
+			<div class="nav-wrapper">
+
 				<ul class="navigation-desktop-list right hide-on-med-and-down">
 					<li><a class="active" href="#">Inicio</a></li>
 					<li><a href="#">Iniciativa</a></li>
@@ -27,12 +27,24 @@
 					</li>
 					<li><a href="#">Datos</a></li>
 					<li><a href="#">Historias</a></li>
-					<li><a href="#">Eventos y Actividades</a></li>
+					<li class="is-dropdown">
+						<a href="#">Eventos y Noticias</a>
+						<ul>
+							<li><a href="#">Eventos</a></li>
+							<li><a href="#">Noticias</a></li>
+						</ul>
+					</li>
+					<li class="no-separator">
+						<form class="form-inline search-form-inline">
+							<input id="search_input" type="text" name="s" placeholder="Buscar">
+							<button id="search_button" type="submit">Q</button>
+						</form>
+					</li>
 					<li class="no-separator"><a href="#"><img src="images/Youtube.svg"></a></li>
 					<li class="no-separator"><a href="#"><img src="images/Facebook.svg"></a></li>
 					<li class="no-separator"><a href="#"><img src="images/instagram.svg"></a></li>
 					<li class="no-separator"><a href="#"><img src="images/Twitter.svg"></a></li>
-					
+
 				</ul>
 
 				<ul id="nav-mobile" class="sidenav">
@@ -47,24 +59,11 @@
 				<a id="logo-container" href="#" class="brand-logo">Logo</a>
 			</div>
 		</nav>
-		
-		<section class="hero">
+
+		<section class="hero home">
 			<div class="section no-pad-bot hero-banner" id="index-banner">
 				<div class="container center">
 				</div>
-			</div>
-		</section>
-		
-		<section class="search-bar" id="search_bar">
-			<div class="row nomargin-bottom">
-				<div class="col s12 l3 center">Llamanos: 02-000-999</div>
-				<div class="col s12 l6 center">
-					<form class="form-inline search-form-inline">
-						<input id="search_input" type="text" name="s" placeholder="Buscar">
-						<input id="search_button" type="submit" value="Buscar">
-					</form>
-				</div>
-				<div class="col s12 l3 center"><a href="mailto:info@datosciudadanos.org">info@datosciudadanos.org</a></div>
 			</div>
 		</section>
 
@@ -113,7 +112,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col s12 center">
-						<img class="responsive-img" src="http://placehold.it/800x600?text=Interactive%20Map">
+						<img class="responsive-img" src="http://placehold.it/600x480?text=Interactive%20Map">
 					</div>
 				</div>
 			</div>
@@ -123,10 +122,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="col s12 l7 center">
-						<a class="cta-link" href="#">Publica los datos de tu ciudad</a>
+						<a class="cta-link bkg-blue" href="#">Publica los datos de tu ciudad</a>
 					</div>
 					<div class="col s12 l5 center">
-						<a class="cta-link" href="#">Contamos Historias</a>
+						<a class="cta-link bkg-orange" href="#">Contamos Historias</a>
 					</div>
 				</div>
 			</div>
@@ -146,19 +145,19 @@
 
 		<section class="datos-section-icons" id="datos_section_icons">
 			<div class="container">
-				<div class="row">
-					<div class="col s6 l3 center"><a href="#"><img width="120" src="images/icono_libro.svg"></a></div>
-					<div class="col s6 l3 center"><a href="#"><img width="120" src="images/Icono_Transporte.svg"></a></div>
-					<div class="col s6 l3 center"><a href="#"><img width="120" src="images/Icono_Pobreza.svg"></a></div>
-					<div class="col s6 l3 center"><a href="#"><img width="120" src="images/Icono_Salud.svg"></a></div>
+				<div class="row flex-square">
+					<a href="#"><img width="120" src="images/icono_libro.svg"></a>
+					<a href="#"><img width="120" src="images/Icono_Transporte.svg"></a>
+					<a href="#"><img width="120" src="images/Icono_Pobreza.svg"></a>
+					<a href="#"><img width="120" src="images/Icono_Salud.svg"></a>
+					<a href="#"><img width="120" src="images/Icono_Salud.svg"></a>
 				</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col s2 center hide-on-small-only"></div>
-					<div class="col s6 l2 center"><a href="#"><img width="120" src="images/Icono_Salud.svg"></a></div>
-					<div class="col s6 l4 center"><a href="#"><img width="120" src="images/Icono_Economico.svg"></a></div>
-					<div class="col s6 l2 center"><a href="#"><img width="120" src="images/Icono_Gobierno.svg"></a></div>
+				<div class="row flex-square">
+					<a href="#"><img width="120" src="images/Icono_Salud.svg"></a>
+					<a href="#"><img width="120" src="images/Icono_Economico.svg"></a>
+					<a href="#"><img width="120" src="images/Icono_Gobierno.svg"></a>
+					<a href="#"><img width="120" src="images/Icono_Salud.svg"></a>
+					<a href="#"><img width="120" src="images/Icono_Salud.svg"></a>
 				</div>
 			</div>
 		</section>
@@ -176,7 +175,7 @@
 							<div class="row">
 								<div class="col m6 post-item">
 									<div class="col s12 center post-thumbnail">
-										<img class="responsive-img" src="http://placehold.it/640x480?text=Grafico%20Circular">
+										<img class="responsive-img" src="http://placehold.it/320x180?text=Grafico%20Circular">
 									</div>
 									<div class="col s12 post-content-placeholder">
 										<h3 class="post-item-title">Historia 1</h3>
@@ -208,7 +207,7 @@
 								</div>
 								<div class="col m6 post-item">
 									<div class="col s12 center post-thumbnail">
-										<img class="responsive-img" src="http://placehold.it/640x480?text=Grafico%20Circular">
+										<img class="responsive-img" src="http://placehold.it/320x280?text=Grafico%20Circular">
 									</div>
 									<div class="col s12 post-content-placeholder">
 										<h3 class="post-item-title">Historia 2</h3>
@@ -244,7 +243,7 @@
 							<div class="row">
 								<div class="col m6 post-item">
 									<div class="col s12 center post-thumbnail">
-										<img class="responsive-img" src="http://placehold.it/640x480?text=Grafico%20Circular">
+										<img class="responsive-img" src="http://placehold.it/320x280?text=Grafico%20Circular">
 									</div>
 									<div class="col s12 post-content-placeholder">
 										<h3 class="post-item-title">Historia 3</h3>
@@ -276,7 +275,7 @@
 								</div>
 								<div class="col m6 post-item">
 									<div class="col s12 center post-thumbnail">
-										<img class="responsive-img" src="http://placehold.it/640x480?text=Grafico%20Circular">
+										<img class="responsive-img" src="http://placehold.it/320x280?text=Grafico%20Circular">
 									</div>
 									<div class="col s12 post-content-placeholder">
 										<h3 class="post-item-title">Historia 4</h3>
@@ -312,7 +311,7 @@
 				</div>
 			</div>
 		</section>
-		
+
 		<section class="repositoriodedatos-section bkg-orange textcolor-white">
 			<div class="container">
 				<div class="row nomargin-bottom">
@@ -323,7 +322,7 @@
 				</div>
 			</div>
 		</section>
-		
+
 		<section class="iniciativa-section" id="iniciativa_section">
 			<div class="container">
 				<div class="row">
@@ -343,7 +342,7 @@
 				</div>
 			</div>
 		</section>
-		
+
 		<section class="contribucion-section" id="contribucion_section">
 			<div class="container">
 				<div class="row">

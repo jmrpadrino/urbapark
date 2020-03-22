@@ -13,24 +13,47 @@
 	</head>
 	<body>
 		<nav class="navigation" role="navigation">
-			<div class="nav-wrapper container">
-				
+			<div class="nav-wrapper">
+
 				<ul class="navigation-desktop-list right hide-on-med-and-down">
-					<li><a href="#">Inicio</a></li>
-					<li><a class="active" href="#">Iniciativa</a></li>
-					<li><a href="#">Recursos</a></li>
+					<li><a class="active" href="#">Inicio</a></li>
+					<li><a href="#">Iniciativa</a></li>
+					<li class="is-dropdown">
+						<a href="#">Recursos</a>
+						<ul>
+							<li><a href="#">Metodología</a></li>
+							<li><a href="#">Herramientas</a></li>
+						</ul>
+					</li>
 					<li><a href="#">Datos</a></li>
 					<li><a href="#">Historias</a></li>
-					<li><a href="#">Eventos y Actividades</a></li>
+					<li class="is-dropdown">
+						<a href="#">Eventos y Noticias</a>
+						<ul>
+							<li><a href="#">Eventos</a></li>
+							<li><a href="#">Noticias</a></li>
+						</ul>
+					</li>
+					<li class="no-separator">
+						<form class="form-inline search-form-inline">
+							<input id="search_input" type="text" name="s" placeholder="Buscar">
+							<button id="search_button" type="submit">Q</button>
+						</form>
+					</li>
 					<li class="no-separator"><a href="#"><img src="images/Youtube.svg"></a></li>
 					<li class="no-separator"><a href="#"><img src="images/Facebook.svg"></a></li>
 					<li class="no-separator"><a href="#"><img src="images/instagram.svg"></a></li>
 					<li class="no-separator"><a href="#"><img src="images/Twitter.svg"></a></li>
-					
+
 				</ul>
 
 				<ul id="nav-mobile" class="sidenav">
-					<li><a href="#">Navbar Link mov</a></li>
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Iniciativa</a></li>
+					<li><a href="#">Recursos</a></li>
+					<li><a href="#">Datos</a></li>
+					<li><a href="#">Historias</a></li>
+					<li><a href="#">Eventos y Actividades</a></li>
 				</ul>
 				<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 				<a id="logo-container" href="#" class="brand-logo">Logo</a>
