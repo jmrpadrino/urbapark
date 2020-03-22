@@ -651,3 +651,76 @@ a.icon-navbar{
 .action-btn-list ul li a:hover {
 	background: #023c6d;
 }
+.card-image {
+	position: relative;
+}
+.card-image .item-float-tag{
+	position: absolute;
+	top: 10px;
+	right: -5px;
+	display: block;
+	padding: 4px 8px;
+	text-align: center;
+	border-radius: 4px;
+	background: white;
+	-webkit-box-shadow: 0px 2px 5px gray;
+	box-shadow: 0px 2px 5px gray;
+	color: gray;
+	font-size: 12px;
+	z-index: 999;
+}
+.blog-title{
+	font-size: 32px;
+	font-weight: 900;
+}
+.blog-title .location-term{
+	color: #02559B;
+}
+.blog-grid-title{
+	font-size: 24px;
+	margin: 0;
+}
+
+.inline-tag-list {
+	margin: 0;
+	padding: 0;
+	margin: 36px 0;
+}
+.inline-tag-list li {
+	display: inline-block;
+	margin-right: 18px;
+	font-weight: bold;
+}
+.inline-tag-list li.active,
+.inline-tag-list li:hover{
+	border-bottom: 2px solid #023c6d;
+	padding-bottom: 18px;
+	font-weight: bold;
+}
+.inline-tag-list li.active a,
+.inline-tag-list li:hover a{
+	color: #023c6d
+}
+.event-card .btn-floating{
+	background: white;
+	color: black;
+}
+.event-card .btn-floating-2{
+	right: 80px;
+}
+.event-card .card-content .card-event-date{
+	font-size: 12px;
+	color: darkred;
+}
+.event-card .card-content a {
+	color: black;
+}
+.event-card .card-content h3{
+	font-size: 18px;
+	font-weight: bold;
+	margin:  8px 0;
+}
+.event-card .card-content .event-location{
+	font-size: 12px;
+	color: gray;
+}
