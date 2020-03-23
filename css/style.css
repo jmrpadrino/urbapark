@@ -171,6 +171,11 @@ a.icon-navbar{
 	background-image: url(../images/fake-hero-background.jpg);
 }
 
+.hero.with-text {
+	height: 90vh;
+	padding-top: 120px;
+}
+
 .hero h1 {
 	color: white;
 	text-transform: uppercase;
@@ -324,11 +329,28 @@ a.icon-navbar{
 	justify-content: space-between;
 	margin-bottom: 36px;
 }
+
+.historiacondatos-section .post-item.no-padding {
+	max-width: 48%;
+	margin: 0 1%;
+}
+
+.post-item{
+	background: white;
+	margin-bottom: 48px;
+	-webkit-box-shadow: 0px 8px 26px #ebebeb;
+	box-shadow: 0px 8px 26px #ebebeb;
+}
+.col.post-content-placeholder,
+.col.post-content-metas{
+	padding: 24px;
+}
 .post-item-title {
 	font-size: 32px;
 	text-transform: uppercase;
 	color: #02559B;
 	font-weight: 900;
+	margin-top: 0;
 }
 .post-item-meta-list {}
 .post-item-meta-list li { 
@@ -362,7 +384,15 @@ a.icon-navbar{
 	-webkit-transform: translateY(10px);
 	transform: translateY(10px)
 }
-.post-item-share-icons li img { width: 36px !important; }
+.post-item-share-icons .fa{
+	background: #F99E2C;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	border-radius: 100%;
+	color: white;
+	padding-top: 5px;
+}
 
 /* SLIDER */
 .slider .slides { background: none; }
@@ -723,4 +753,10 @@ a.icon-navbar{
 .event-card .card-content .event-location{
 	font-size: 12px;
 	color: gray;
+}
+.single-container {
+	padding-top: 40px !important;
+}
+.single-img-center {
+	margin: 0 36px auto;
 }
