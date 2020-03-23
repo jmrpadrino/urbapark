@@ -613,6 +613,16 @@ a.icon-navbar{
 	align-items: center;
 	border: 1px solid white;
 }
+#ciudad {
+	display: block;
+	max-width: 280px;
+}
+.select-ciudad label {
+	font-size: 16px;
+	color: black;
+	margin: 0 10px;
+}
+.select-ciudad{ -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start;}
 .create-history-btn {
 	padding: 14px 0 !important;
 	background: #02559B;
